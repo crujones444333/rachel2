@@ -18,73 +18,26 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: url('https://images.unsplash.com/photo-1601544533352-e7b2085fbc30?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background: url('https://cdn.pixabay.com/photo/2017/10/31/20/39/surfers-paradise-2902766_1280.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
 
     h1 {
       font-size: 2.5em;
-      margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+      margin-bottom: 30px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+      background: rgba(0,0,0,0.4);
+      padding: 10px 20px;
+      border-radius: 12px;
     }
 
     .countdown {
-      font-size: 1.8em;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 20px;
+      font-size: 1.5em;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
       padding: 30px 50px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #fff;
-      transition: all 0.3s ease;
-    }
-
-    .countdown:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-    }
-
-    .countdown span {
-      display: block;
-      margin: 10px 0;
-    }
-  </style>
-</head>
-<body>
-  <h1>Countdown to Gold Coast Adventure</h1>
-  <div class="countdown" id="countdown">
-    Loading...
-  </div>
-
-  <script>
-    // Set a valid UTC datetime — e.g., July 1, 2025 at 19:30 UTC
-    const targetDate = new Date("2025-07-01T19:30:00Z");
-
-    function updateCountdown() {
-      const now = new Date();
-      const diff = targetDate - now;
-
-      if (diff <= 0) {
-        document.getElementById("countdown").innerText = "Time's up!";
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const totalHours = Math.floor(diff / (1000 * 60 * 60));
-      const totalSeconds = Math.floor(diff / 1000);
-
-      document.getElementById("countdown").innerHTML = `
-        <span>${days} days</span>
-        <span>${totalHours} total hours</span>
-        <span>${totalSeconds} total seconds</span>
-      `;
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  </script>
-</body>
-</html>
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      color: #fdfdfd;
+      backdrop-filter: blur(6px);
+      text-ali
